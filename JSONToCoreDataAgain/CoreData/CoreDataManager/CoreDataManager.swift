@@ -12,7 +12,9 @@ import CoreData
 class CoreDataManager: NSObject{
     
     private override init() {
+        super.init()
         
+        applicationLibraryDirectory()
     }
     // Create a shared Instance
     static let _shared = CoreDataManager()
@@ -21,7 +23,7 @@ class CoreDataManager: NSObject{
     class func shared() -> CoreDataManager{
         return _shared
     }
-        
+    
     // Get the location where the core data DB is stored
     
     private lazy var applicationDocumentsDirectory: URL = {
@@ -32,6 +34,7 @@ class CoreDataManager: NSObject{
     }()
     
     private func applicationLibraryDirectory() {
+        print(applicationDocumentsDirectory)
         if let url = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).last {
             print(url.absoluteString)
         }

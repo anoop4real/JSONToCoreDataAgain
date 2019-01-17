@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		762DF29721F1159900A4CEB8 /* BaseValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762DF29621F1159900A4CEB8 /* BaseValueTransformer.swift */; };
 		E8A2F90021AEE659003FB38E /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2F8FE21AEE659003FB38E /* Navigator.swift */; };
 		E8A2F90121AEE659003FB38E /* SimpleNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2F8FF21AEE659003FB38E /* SimpleNavigator.swift */; };
 		E8A2F90321AEE674003FB38E /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2F90221AEE674003FB38E /* ViewFactory.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		762DF29621F1159900A4CEB8 /* BaseValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseValueTransformer.swift; sourceTree = "<group>"; };
 		E8A2F8FE21AEE659003FB38E /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		E8A2F8FF21AEE659003FB38E /* SimpleNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNavigator.swift; sourceTree = "<group>"; };
 		E8A2F90221AEE674003FB38E /* ViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				E8A2F90221AEE674003FB38E /* ViewFactory.swift */,
 				E8C3BF5621AD5813001590A1 /* APIRouter.swift */,
 				E8C3BF5821AD5C0B001590A1 /* APIConstants.swift */,
+				762DF29621F1159900A4CEB8 /* BaseValueTransformer.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				E8C3BF0E21AD394A001590A1 /* AppDelegate.swift in Sources */,
 				E8A2F90021AEE659003FB38E /* Navigator.swift in Sources */,
 				E8C3BF6421AD8369001590A1 /* DataStoreProtocol.swift in Sources */,
+				762DF29721F1159900A4CEB8 /* BaseValueTransformer.swift in Sources */,
 				E8C3BF1621AD394A001590A1 /* JSONToCoreDataAgain.xcdatamodeld in Sources */,
 				E8C3BF4021AD3B27001590A1 /* Albums.swift in Sources */,
 				E8A2F90321AEE674003FB38E /* ViewFactory.swift in Sources */,
