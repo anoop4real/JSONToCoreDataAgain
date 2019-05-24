@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		762DF29721F1159900A4CEB8 /* BaseValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762DF29621F1159900A4CEB8 /* BaseValueTransformer.swift */; };
+		76A1EEE52298710E0034C438 /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A1EEE42298710E0034C438 /* ConnectivityManager.swift */; };
 		E8A2F90021AEE659003FB38E /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2F8FE21AEE659003FB38E /* Navigator.swift */; };
 		E8A2F90121AEE659003FB38E /* SimpleNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2F8FF21AEE659003FB38E /* SimpleNavigator.swift */; };
 		E8A2F90321AEE674003FB38E /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2F90221AEE674003FB38E /* ViewFactory.swift */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		762DF29621F1159900A4CEB8 /* BaseValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseValueTransformer.swift; sourceTree = "<group>"; };
+		76A1EEE42298710E0034C438 /* ConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
 		E8A2F8FE21AEE659003FB38E /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		E8A2F8FF21AEE659003FB38E /* SimpleNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNavigator.swift; sourceTree = "<group>"; };
 		E8A2F90221AEE674003FB38E /* ViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				E8C3BF5621AD5813001590A1 /* APIRouter.swift */,
 				E8C3BF5821AD5C0B001590A1 /* APIConstants.swift */,
 				762DF29621F1159900A4CEB8 /* BaseValueTransformer.swift */,
+				76A1EEE42298710E0034C438 /* ConnectivityManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				E8A2F90821AEE70C003FB38E /* SecondViewController.swift in Sources */,
 				E8C3BF4B21AD4507001590A1 /* AlbumItem+CoreDataProperties.swift in Sources */,
 				E8C3BF5221AD56AF001590A1 /* NetworkManagerProtocol.swift in Sources */,
+				76A1EEE52298710E0034C438 /* ConnectivityManager.swift in Sources */,
 				E8C3BF4A21AD4507001590A1 /* AlbumItem+CoreDataClass.swift in Sources */,
 				E8A2F90121AEE659003FB38E /* SimpleNavigator.swift in Sources */,
 				E8C3BF4721AD40BC001590A1 /* CoreDataManager.swift in Sources */,
@@ -627,6 +631,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = JSONToCoreDataAgain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -648,6 +653,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = JSONToCoreDataAgain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,7 +1,7 @@
 //
 //  DetailViewController.swift
 //
-//  Copyright (c) 2014 Alamofire Software Foundation (http://alamofire.org/)
+//  Copyright (c) 2014-2018 Alamofire Software Foundation (http://alamofire.org/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -30,7 +30,7 @@ class DetailViewController: UITableViewController {
         case headers, body
     }
 
-    var request: Alamofire.Request? {
+    var request: Request? {
         didSet {
             oldValue?.cancel()
 

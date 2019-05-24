@@ -27,7 +27,7 @@ extension NetworkDataManager: NetworkManagerProtocol{
     
     func fetchDataWith(completion: @escaping (Result<Data?, Error?>) -> Void) {
         
-        Alamofire.request(APIRouter.fetchAll)
+        AF.request(APIRouter.fetchAll)
             .validate()
             .responseJSON { (response) in
                 

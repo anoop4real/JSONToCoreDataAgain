@@ -29,6 +29,15 @@ class ViewController: UIViewController, UIUpdaterProtocol {
         dataStore.fetchedResultsController.delegate = self
         fetchData()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        ConnectivityMananger.shared().addListener(listener: self)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        ConnectivityMananger.shared().removeListener(listener: self)
+    }
     
     func fetchData(){
         
@@ -58,6 +67,15 @@ class ViewController: UIViewController, UIUpdaterProtocol {
         albumTableView.rowHeight = UITableView.automaticDimension
         albumTableView.estimatedRowHeight = 100.0
         
+    }
+    func showAlertWith(title: String = "", message: String) {
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .default) {(_) in
+            
+        }
+        alertController.addAction(alertAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 
 }
@@ -148,4 +166,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     
+}
+
+extension ViewController: NetworkConnectionStatusListener {
+    func networkStatusDidChange(status: NetworkConnectionStatus) {
+        switch status {
+        case .offline:
+            showAlertWith(message: "Offline")
+        case .online:
+            showAlertWith(message: "Online")
+        }
+    }
 }
